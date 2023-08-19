@@ -1,5 +1,8 @@
 FROM ruby:latest
 
+# Node.jsのインストール
+RUN apt-get update && apt-get install -y nodejs
+
 ARG RUBYGEMS_VERSION=3.4.6
 
 RUN mkdir /app
